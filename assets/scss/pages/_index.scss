@@ -1,3 +1,24 @@
-.index-title {
-  font-size: 100px;
+.navcustom {
+  li {
+    a {
+      font-weight: 400p;
+      line-height: 1.5;
+      color: #141A1F;
+    }
+  }
+}
+
+.userimg {
+  img {
+    max-width: 44px;
+    border-radius: 100px;
+    border: 1px solid #D1D9E1;
+  }
+
+  span {
+    font-weight: 500px;
+    line-height: 1.2;
+    color: #141A1F;
+  }
+
 }

@@ -12,3 +12,9 @@ https://github.com/hexschool/2022-web-layout-training/tree/main/2025-week5
 
 間距
 $spacer = 1rem = 16px
+
+修改樣式
+先將設計稿配色放於_variables.scss
+
+1.color:主色、副色、通用顏色
+2.$spacer

@@ -1,8 +1,20 @@
+
+// 自訂義Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+
+//customer
+@import "./helper/variables";
+
+//bootstrap
 @import "../../node_modules/bootstrap";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+//components
 
-@import './pages/index.scss';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+
+//pages
+@import './pages/index';
