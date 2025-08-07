@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+ .navcustom {
+  li {
+    padding: 8px 24px;
+
+    a {
+      font-weight: 400p;
+      line-height: 1.5;
+      color: #141A1F;
+      letter-spacing: 0.02rem;
+
+    }
+  }
+}
+
+.userimg {
+  img {
+    max-width: 44px;
+    border-radius: 100px;
+    border: 1px solid #D1D9E1;
+  }
+
+  span {
+    font-weight: 500px;
+    line-height: 1.2;
+    color: #141A1F;
+  }
+
 }
