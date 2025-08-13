@@ -1,0 +1,21 @@
+<script>
+    let pagetilte = "職旅";
+    let titlename = "";
+    const url = window.location.pathname;
+    const nowpage = url.split("/").pop();
+    // console.log('html', page);
+
+    // const expr = page;
+    switch (nowpage) {
+        case "index.html":
+            pagetilte = "首頁-" + pagetilte;
+            break;
+        case "p.html":
+        case "practice.html":
+            pagetilte = "測試頁-" + pagetilte;
+            break;
+        //default:
+        //console.log(`Sorry, we are out of ${expr}.`);
+    }
+    document.title = pagetilte;
+</script>
