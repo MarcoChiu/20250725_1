@@ -1,14 +1,14 @@
  .text-primary {
      font-weight: 500;
      line-height: 1.2;
-    //  letter-spacing: 0.02rem;
+     letter-spacing: 0.02em;
      color: #141A1F;
  }
 
  .text-secondary {
      font-weight: 400;
      line-height: 1.5;
-    //  letter-spacing: 0.02em;
+     letter-spacing: 0.02em;
      color: #667F99;
  } 
 
@@ -29,7 +29,7 @@
  }
 
  .btn-white:hover,.btn-dark:hover {
-     background-color: $global-success-40;
+     background-color: #47c20a;
      color:  #fcfcfd;
 
  }

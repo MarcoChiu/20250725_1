@@ -1,6 +1,6 @@
 //套用自訂的font-size rfs: false(自訂) ture(bootstrap會自動調整成rem)
-$utilities: map-merge($utilities,
-        ("font-size": (rfs: ture,
-                property: font-size,
-                class: fs,
-                values: $font-sizes )));
+// $utilities: map-merge($utilities,
+//         ("font-size": (rfs: ture,
+//                 property: font-size,
+//                 class: fs,
+//                 values: $font-sizes )));
