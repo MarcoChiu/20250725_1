@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script type="module" crossorigin src="/20250725_demo/assets/main-D5w99rbT.js"></script>
+  <link rel="stylesheet" crossorigin href="/20250725_demo/assets/main-BhdZtYF6.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/20250725_demo/assets/logo-CRTeTChE.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navcustom">
+          <li class="nav-item me-3">
+            <a class="nav-link active fs-md" aria-current="page" href="#">服務方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-md " aria-current="page" href="#">關於職旅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-md" aria-current="page" href="#">聯絡我們</a>
+          </li>          
+        </ul>
+        <form class="d-flex align-items-center">           
+          <div class="userimg fs-md">
+            <img class="me-2" src="/20250725_demo/assets/avatar-QGHQ479s.png" alt="avatar" />
+            <span>Mokumaru</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <main class="container-fluid bg-natural-95">
+
+      <div class="container py-7">
+
+        <div class="row justify-content-center">
+          <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
+          <div class="col-10">
+
+            <!-- Tab -->
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="btn active" id="pills-personal-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal"
+                  aria-selected="true"> <span class="material-symbols-outlined align-bottom me-1">
+                    face
+                  </span>
+                  個人資料</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn" id="pills-reservation-tab" data-bs-toggle="pill" data-bs-target="#pills-reservation"
+                  type="button" role="tab" aria-controls="pills-reservation" aria-selected="false"> <span
+                    class="material-symbols-outlined align-bottom me-1">
+                    pending_actions
+                  </span>
+                  預約記錄</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn" id="pills-plan-tab" data-bs-toggle="pill" data-bs-target="#pills-plan" type="button"
+                  role="tab" aria-controls="pills-plan" aria-selected="false"> <span
+                    class="material-symbols-outlined align-bottom me-1">
+                    list_alt
+                  </span>
+                  職旅計畫</button>
+              </li>
+
+            </ul>
+
+            <!-- 內容 -->
+            <div class="tab-content  border border-1 rounded-1 shadow bg-white" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-personal" role="tabpanel"
+                aria-labelledby="pills-personal" tabindex="0">
+                <form>
+    <!-- start 個人資料 -->
+    <div class="row m-6">
+
+        <!-- start col-4 左邊-->
+        <div class="col-4">
+           <h2 class="fs-md-1 fs-3 fw-medium">個人資料</h2>
+            
+        </div>
+        <!-- end col-4 -->
+
+        <!-- start col-8 右邊-->
+        <div class="col-8">
+
+            <!--頭像 -->
+            <div class="mb-4">
+                <img src="/20250725_demo/assets/avatar-QGHQ479s.png" alt="個人頭像" class="me-3 rounded-circle" />
+                <label for="upload" class="btn border align-bottom">
+                    <span class="material-symbols-outlined">
+                        upload
+                    </span>更新頭貼</label>
+            </div>
+            <!-- 姓名 -->
+            <div class="mb-4">
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="name" placeholder="姓名" value="Mokumaru" />
+                    <label for="name">姓名</label>
+                </div>
+            </div>
+            <!-- 性別 -->
+            <div class="mb-2">
+                <label for="inlineRadio1" class="form-label">
+                    性別</label>
+            </div>
+            <div class="mb-4">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">女性</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">男性</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">不用透露</label>
+                </div>
+            </div>
+            <!-- 生日 -->
+            <div class="mb-4">
+                <div class="form-floating mb-4">
+                    <input type="date" class="form-control" id="birthday" placeholder="生日" value="2000-01-10" />
+                    <label for="birthday">生日</label>
+                </div>
+            </div>
+            <!-- 密碼 -->
+            <div class="mb-2">
+                <label for="inlineRadio1" class="form-label">
+                    密碼
+                </label>
+            </div>
+            <div class="mb-4">
+                <button type="button" class="btn  btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">修改密碼 <span class="material-symbols-outlined align-bottom">
+                        keyboard_arrow_right
+                    </span> </button>
+
+                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modelwidth">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-2" id="exampleModalLabel">修改密碼</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-floating mb-4">
+                                        <input type="password" class="form-control" id="password1" placeholder="新密碼" />
+                                        <label for="password1" class="text-black">新密碼</label>
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <input type="password" class="form-control" id="password2" placeholder="再次密碼" />
+                                        <label for="password2" class="text-black">再次密碼</label>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">變更密碼</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 信箱 -->
+            <div class="mb-4">
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" id="email" placeholder="信箱" value="mokumaru@mail.com" />
+                    <label for="email">信箱</label>
+                    <span class="text-secondary fs-md-5 fs-6">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</span>
+                </div>
+            </div>
+            <!-- 電話 -->
+            <div class="mb-4">
+                <div class="form-floating mb-4">
+                    <input type="tel" class="form-control" id="tel" placeholder="電話" value="0912-345-678" />
+                    <label for="tel">電話</label>
+                </div>
+            </div>
+            <!-- 地址 -->
+            <div class="mb-4">
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="address" placeholder="通訊地址" value="高雄市三民區九如一路87" />
+                    <label for="address">通訊地址</label>
+                </div>
+            </div>
+        </div>
+        <!-- end col-8 -->
+    </div>
+    <!-- end 個人資料 -->
+
+    <!-- start 下方按鈕 -->
+    <div class="d-flex justify-content-center m-6">
+        <button class="btn btn-white me-5">重新填寫 <span class="material-symbols-outlined align-bottom">
+                keyboard_arrow_right
+            </span> </button>
+        <button class="btn btn-dark">儲存更新 <span class="material-symbols-outlined align-bottom">
+                keyboard_arrow_right
+            </span> </button>
+    </div>
+    <!-- end 下方按鈕 -->
+</form>              </div>
+              <div class="tab-pane fade" id="pills-reservation" role="tabpanel" aria-labelledby="pills-reservation-tab"
+                tabindex="0">
+                <!--　start 預約記錄 -->
+<div class="row p-6">
+
+    <h2 class="fs-md-2 fs-5 fw-medium">預約紀錄</h2>
+
+
+    <div class="d-flex gap-6 mb-md-9 mb-6">
+        <div class="card w-100 border border-natural-85 d-md-block d-none">
+            <div class="card-body text-center py-6">
+                <h3 class="fs-md-2 fs-3 text-primary-60">3</h3>
+                <p class="fs-md-5 fs-6 text-natural-50">已完成諮詢</p>
+            </div>
+        </div>
+        <div class="card w-100 border border-natural-85">
+            <div class="card-body text-center py-6">
+                <h3 class="fs-md-2 fs-3 text-primary-60">2025/10/10</h3>
+                <p class="fs-md-5 fs-6 text-natural-50">即將到來</p>
+            </div>
+        </div>
+        <div class="card w-100 border border-natural-85 d-md-block d-none">
+            <div class="card-body text-center py-6">
+                <h3 class="fs-md-2 text-primary-60">3/6</h3>
+                <p class="fs-md-5 fs-6 text-natural-50">使用方案進度</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between mb-4">
+        <div>
+            <button type="button" class="btn btn-dark me-2">全部預約</button>
+            <button type="button" class="btn btn-white border me-2">已完成</button>
+            <button type="button" class="btn btn-white border">已取消</button>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-outline-dark border " type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                排序
+                <span class="material-symbols-outlined align-bottom ms-1">filter_list</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">新到舊</a></li>
+                <li><a class="dropdown-item" href="#">舊到新</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>諮詢方案</th>
+                    <th>預約日期</th>
+                    <th>諮詢時長</th>
+                    <th>諮詢方式</th>
+                    <th>上課狀態</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>職涯定位-職涯探索包 | 6/6堂</td>
+                    <td>2025/11/11</td>
+                    <td>60分鐘</td>
+                    <td><span class="badge rounded-pill text-natural-50 bg-white border border-1">視訊</span></td>
+                    <td>等待上課</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>職涯定位-職涯探索包 | 5/6堂</td>
+                    <td>2025/10/10</td>
+                    <td>60分鐘</td>
+                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">視訊</span></td>
+                    <td>等待上課</td>
+                </tr>
+                <tr>
+                    <td>職涯定位-職涯探索包 | 4/6堂</td>
+                    <td>2025/09/09</td>
+                    <td>60分鐘</td>
+                    <td class="text-secondary"><span
+                            class="badge rounded-pill  text-natural-50 bg-white border border-1">視訊</span>
+                    </td>
+                    <td>已完成</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>職涯定位-職涯探索包 | 3/6堂</td>
+                    <td>2025/08/08</td>
+                    <td>60分鐘</td>
+                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
+                    <td>已完成</td>
+                </tr>
+                <tr>
+                    <td>職涯定位-職涯探索包 | 2/6堂</td>
+                    <td>2025/07/07</td>
+                    <td>60分鐘</td>
+                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
+                    <td>已完成</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>職涯定位-職涯探索包 | 1/6堂</td>
+                    <td>2025/06/06</td>
+                    <td>90分鐘</td>
+                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
+                    <td>已完成</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- end 預約記錄 -->              </div>
+              <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab" tabindex="0">
+                <form>
+   todo
+</form>              </div>
+
+            </div>
+            <!-- 內容 END -->
+          </div>
+          <!-- col-10 END -->
+        </div>
+        <!-- row END -->
+      </div>
+      <!-- container END -->
+    </main>
+    <footer class="bg-natural-95 border-top py-6">
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">服務方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">關於職旅</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">隱私權政策</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">用戶條款</a>
+                </li>
+            </ul>
+            <span class="text-secondary">Copyright © 2025 職旅 workway. All rights reserved.</span>
+        </div>
+    </div>
+
+</footer>      
+
+      <script>
+    let pagetilte = "職旅";
+    let titlename = "";
+    const url = window.location.pathname;
+    const nowpage = url.split("/").pop();
+    // console.log('html', page);
+
+    // const expr = page;
+    switch (nowpage) {
+        case "index.html":
+            pagetilte = "首頁-" + pagetilte;
+            break;
+        case "p.html":
+        case "practice.html":
+            pagetilte = "測試頁-" + pagetilte;
+            break;
+        //default:
+        //console.log(`Sorry, we are out of ${expr}.`);
+    }
+    document.title = pagetilte;
+</script>         
+
+</body>
+
+</html>
