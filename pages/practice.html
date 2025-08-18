@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
 </head>
+
 <body>
     <!-- 自訂義顏色 -->
     <div class="mb-5 mb-lg-7">
@@ -19,20 +20,79 @@
     </div>
     <!-- 自訂義字體 RFS關掉 開啟自訂義RWD字體-->
     <p class="fs-3 fs-lg-1">hellow</p>
+
+    <!-- 自訂字體顏色及外框顏色 text- bg- (border + border-) -->
     <div>
-        <p class="text-natural-10 border  border-global-danger-70">This is a primary text</p>
+        <p class="text-primary-97 bg-primary-25 border  border-global-danger-70 ">This is a primary text</p>
         <p class="text-natural-30 border  border-global-danger-45">This is a secondary text</p>
     </div>
-    <!-- 自訂陰影 -->
-    <div class="card shadow" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+
+    <!-- $spacer -->
+    <div>
+        <div class="ps-7">間距</div>
+        <div class="mb-7">間距</div>
+        <div class="px-7">間距</div>
+        <div class="p-5">間距</div>
+        <div class="ms-7">間距</div>
     </div>
+
+    <!-- $border-width -->
+    <div>
+        <span class="border border-1 ">border-1</span>
+        <span class="border border-2 2">border-2</span>
+        <span class="border border-3 ">border-3</span>
+        <span class="border border-4 ">border-4</span>
+        <span class="border border-5 ">border-5</span>
+        <span class="border border-6 ">border-6</span>
+        <span class="border border-7 rounded-circle">border-7</span>
+        <span class="border border-7 rounded-pill ">border-7</span>
+    </div>
+
+    <!-- https://getbootstrap.com/docs/5.3/utilities/borders/  -->
+    <div>
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-0" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-1" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-2" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-3" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-4" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-5" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-circle" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-pill" alt="...">
+
+
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-bottom-1" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-start-2" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-end-circle" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-start-pill" alt="...">
+        <img style="max-width:100px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEb8I9zM-zh1hZMqtxSI9l4sX4AC6BntVAQ&s"
+            class="rounded-5 rounded-top-0" alt="...">
+    </div>
+
 
     <!-- 格線系統列一種寫法 -->
     <!-- 手機row-cols-1 平板row-cols-md-3 電腦row-cols-lg-4 -->
@@ -68,7 +128,18 @@
         </div>
     </div>
 
-    
+    <!-- 自訂陰影 -->
+    <div class="card shadow" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
     <script type="module" src="../main.js"></script>
     <%- include('./layout/changetitle'); -%>
 </body>

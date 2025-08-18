@@ -33,6 +33,12 @@ $theme-colors: (
     "white":#fcfcfd,
 );
 
+// 自訂義字體
+$enable-rfs: false; // 是否啟用 RFS (Responsive Font Size)
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3;
+$h5-font-size: $font-size-base * 1.125;
+
 // 自訂義間距
 $spacer: 1rem;
 $spacers: (
@@ -46,16 +52,26 @@ $spacers: (
     7: $spacer * 5,
 );
 
-// 自訂義字體
-$enable-rfs: false; // 是否啟用 RFS (Responsive Font Size)
-$font-size-base: 1rem;
-$h1-font-size: $font-size-base * 3;
-$h5-font-size: $font-size-base * 1.125;
+//自訂義border寬度
+$border-width:1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  7: 7px
+);
 
 //自訂圓角
 $border-radius: 1rem;
 $border-radius-sm: 0.75rem;
 $border-radius-lg: 1.5rem;
+$border-radius-xl:            3rem ;
+$border-radius-xxl:           4.5rem;
+$border-radius-pill:          50rem ;
+$border-radius-2xl:           $border-radius-xxl ;
 
 //自訂陰影
 $box-shadow: 0 0 1rem rgba(#000, 0.12) !default;
