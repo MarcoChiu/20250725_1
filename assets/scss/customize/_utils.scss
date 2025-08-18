@@ -1,5 +1,6 @@
-
-//因為font-sze預設沒有開啟RWD這邊開啟 fs-3 fs-lg-1才會有用
+//套用自訂的font-size rfs: false(自訂) ture(bootstrap會自動調整成rem)
 $utilities: map-merge($utilities,
-    ("font-size": map-merge(map-get($utilities, "font-size"),
-        (responsive: true))));
+        ("font-size": (rfs: false,
+                property: font-size,
+                class: fs,
+                values: $font-sizes )));

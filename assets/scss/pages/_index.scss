@@ -1,25 +1,16 @@
- .Global-Text-primary {
+ .text-primary {
      font-weight: 500;
      line-height: 1.2;
-     letter-spacing: 0.02rem;
+    //  letter-spacing: 0.02rem;
      color: #141A1F;
  }
 
- .Global-Text-secondary {
+ .text-secondary {
      font-weight: 400;
      line-height: 1.5;
-     letter-spacing: 0.02rem;
+    //  letter-spacing: 0.02em;
      color: #667F99;
- }
-
-
- .Global-Text-hover-primary {
-     font-weight: 700;
-     font-size: 40px;
-     line-height: 1.2;
-     color: #4A69E8;
- }
-
+ } 
 
  .modelwidth {
      max-width: 480px;

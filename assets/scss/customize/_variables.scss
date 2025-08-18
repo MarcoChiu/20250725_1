@@ -1,7 +1,8 @@
 // 自訂義顏色
 //overwrite bootstrap variables
+//class用法 text-primary-97 bg-primary-90
 $global-success-40 :#47c20a;
-$natural-85:#d1d9e1;
+$natural-85: #d1d9e1;
 $theme-colors: (
   "primary-97": #f1f4fd,
   "primary-90": #d2d0f9,
@@ -40,16 +41,17 @@ $enable-rfs: false; // 是否啟用 RFS (Responsive Font Size)
 // $font-size-base: 1rem;
 // $h1-font-size: $font-size-base * 3;
 // $h5-font-size: $font-size-base * 1.125;
+//用法 fs-sm
+$font-sizes: (
+  sm: 14px,
+  md: 16px,
+  lg: 18px,
+  xl: 20px,
+  2xl: 24px,
+  4xl: 32px
+);
 
-
-// $font-sizes: (
-//   1: 14px,
-//   2: 16px,
-//   3: 18px,
-//   4: 24px,
-//   5: 32px,
-// );
-
+//用法 p-1 py-1 mb-1
 // 自訂義間距
 $spacer: 1rem;
 $spacers: (
