@@ -12,6 +12,7 @@
      color: #667F99;
  } 
 
+
  .modelwidth {
      max-width: 480px;
  }
@@ -32,7 +33,9 @@
      background-color: #47c20a;
      color:  #fcfcfd;
 
- }
+ }  
 
-  
- 
+
+ label.floatinglabel{
+    color:$black;
+ }

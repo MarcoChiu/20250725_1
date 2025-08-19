@@ -1,107 +1,105 @@
 <!--　start 預約記錄 -->
-<div class="row p-6">
-
-    <h2 class="fs-md-2 fs-5 fw-medium">預約紀錄</h2>
-
-
-    <div class="d-flex gap-6 mb-md-9 mb-6">
-        <div class="card w-100 border border-natural-85 d-md-block d-none">
-            <div class="card-body text-center py-6">
-                <h3 class="fs-md-2 fs-3 text-primary-60">3</h3>
-                <p class="fs-md-5 fs-6 text-natural-50">已完成諮詢</p>
+<div class="m6">
+    <div class="row p-6">
+        <h2 class="fs-md-1 fs-3 fw-semibold">預約紀錄</h2>
+        <div class="d-flex gap-6 mb-md-9 mb-6">
+            <div class="card w-100 border border-natural-85 d-md-block d-none">
+                <div class="card-body text-center py-6">
+                    <h3 class="fs-md-2 fs-3 fw-bold text-primary-60">3</h3>
+                    <p class="fs-md-5 fs-6 text-natural-50">已完成諮詢</p>
+                </div>
+            </div>
+            <div class="card w-100 border border-natural-85">
+                <div class="card-body text-center py-6">
+                    <h3 class="fs-md-2 fs-3 fw-bold text-primary-60">2025/10/10</h3>
+                    <p class="fs-md-5 fs-6 text-natural-50">即將到來</p>
+                </div>
+            </div>
+            <div class="card w-100 border border-natural-85 d-md-block d-none">
+                <div class="card-body text-center py-6">
+                    <h3 class="fs-md-2 fw-bold text-primary-60">3/6</h3>
+                    <p class="fs-md-5 fs-6 text-natural-50">使用方案進度</p>
+                </div>
             </div>
         </div>
-        <div class="card w-100 border border-natural-85">
-            <div class="card-body text-center py-6">
-                <h3 class="fs-md-2 fs-3 text-primary-60">2025/10/10</h3>
-                <p class="fs-md-5 fs-6 text-natural-50">即將到來</p>
-            </div>
-        </div>
-        <div class="card w-100 border border-natural-85 d-md-block d-none">
-            <div class="card-body text-center py-6">
-                <h3 class="fs-md-2 text-primary-60">3/6</h3>
-                <p class="fs-md-5 fs-6 text-natural-50">使用方案進度</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="d-flex justify-content-between mb-4">
-        <div>
-            <button type="button" class="btn btn-dark me-2">全部預約</button>
-            <button type="button" class="btn btn-white border me-2">已完成</button>
-            <button type="button" class="btn btn-white border">已取消</button>
+        <div class="d-flex justify-content-between mb-4">
+            <div>
+                <button type="button" class="btn btn-dark me-2">全部預約</button>
+                <button type="button" class="btn btn-white border me-2">已完成</button>
+                <button type="button" class="btn btn-white border">已取消</button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-outline-dark border " type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    排序
+                    <span class="material-symbols-outlined align-bottom ms-1">filter_list</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">新到舊</a></li>
+                    <li><a class="dropdown-item" href="#">舊到新</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-outline-dark border " type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                排序
-                <span class="material-symbols-outlined align-bottom ms-1">filter_list</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">新到舊</a></li>
-                <li><a class="dropdown-item" href="#">舊到新</a></li>
-            </ul>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>諮詢方案</th>
+                        <th>預約日期</th>
+                        <th>諮詢時長</th>
+                        <th>諮詢方式</th>
+                        <th>上課狀態</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>職涯定位-職涯探索包 | 6/6堂</td>
+                        <td>2025/11/11</td>
+                        <td>60分鐘</td>
+                        <td><span class="badge rounded-pill text-natural-50 bg-white border border-1">視訊</span></td>
+                        <td>等待上課</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>職涯定位-職涯探索包 | 5/6堂</td>
+                        <td>2025/10/10</td>
+                        <td>60分鐘</td>
+                        <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">視訊</span></td>
+                        <td>等待上課</td>
+                    </tr>
+                    <tr>
+                        <td>職涯定位-職涯探索包 | 4/6堂</td>
+                        <td>2025/09/09</td>
+                        <td>60分鐘</td>
+                        <td class="text-secondary"><span
+                                class="badge rounded-pill  text-natural-50 bg-white border border-1">視訊</span>
+                        </td>
+                        <td>已完成</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>職涯定位-職涯探索包 | 3/6堂</td>
+                        <td>2025/08/08</td>
+                        <td>60分鐘</td>
+                        <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
+                        <td>已完成</td>
+                    </tr>
+                    <tr>
+                        <td>職涯定位-職涯探索包 | 2/6堂</td>
+                        <td>2025/07/07</td>
+                        <td>60分鐘</td>
+                        <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
+                        <td>已完成</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>職涯定位-職涯探索包 | 1/6堂</td>
+                        <td>2025/06/06</td>
+                        <td>90分鐘</td>
+                        <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
+                        <td>已完成</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>諮詢方案</th>
-                    <th>預約日期</th>
-                    <th>諮詢時長</th>
-                    <th>諮詢方式</th>
-                    <th>上課狀態</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>職涯定位-職涯探索包 | 6/6堂</td>
-                    <td>2025/11/11</td>
-                    <td>60分鐘</td>
-                    <td><span class="badge rounded-pill text-natural-50 bg-white border border-1">視訊</span></td>
-                    <td>等待上課</td>
-                </tr>
-                <tr class="table-secondary">
-                    <td>職涯定位-職涯探索包 | 5/6堂</td>
-                    <td>2025/10/10</td>
-                    <td>60分鐘</td>
-                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">視訊</span></td>
-                    <td>等待上課</td>
-                </tr>
-                <tr>
-                    <td>職涯定位-職涯探索包 | 4/6堂</td>
-                    <td>2025/09/09</td>
-                    <td>60分鐘</td>
-                    <td class="text-secondary"><span
-                            class="badge rounded-pill  text-natural-50 bg-white border border-1">視訊</span>
-                    </td>
-                    <td>已完成</td>
-                </tr>
-                <tr class="table-secondary">
-                    <td>職涯定位-職涯探索包 | 3/6堂</td>
-                    <td>2025/08/08</td>
-                    <td>60分鐘</td>
-                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
-                    <td>已完成</td>
-                </tr>
-                <tr>
-                    <td>職涯定位-職涯探索包 | 2/6堂</td>
-                    <td>2025/07/07</td>
-                    <td>60分鐘</td>
-                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
-                    <td>已完成</td>
-                </tr>
-                <tr class="table-secondary">
-                    <td>職涯定位-職涯探索包 | 1/6堂</td>
-                    <td>2025/06/06</td>
-                    <td>90分鐘</td>
-                    <td><span class="badge rounded-pill  text-natural-50 bg-white border border-1">面對面</span></td>
-                    <td>已完成</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </div>
-
 <!-- end 預約記錄 -->

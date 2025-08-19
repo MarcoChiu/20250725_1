@@ -3,6 +3,7 @@
 //class用法 text-primary-97 bg-primary-90
 $global-success-40 :#47c20a;
 $natural-85: #d1d9e1;
+$black:#141a1f;
 $theme-colors: (
   "primary-97": #f1f4fd,
   "primary-90": #d2d0f9,
@@ -32,7 +33,7 @@ $theme-colors: (
   "global-90":#ffeacc,
   "global-70":#f58f00,
   "global-45":#b26800,
-  "black":#141a1f,
+  "black":$black,
   "white":#fcfcfd,
 );
 
